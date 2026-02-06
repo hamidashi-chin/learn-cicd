@@ -1,5 +1,7 @@
 # サンプルアプリケーション
 
+[![backend](https://github.com/hamidashi-chin/learn-cicd/actions/workflows/backend.yml/badge.svg)](https://github.com/hamidashi-chin/learn-cicd/actions/workflows/backend.yml)
+
 静的なフロントエンドと Web API から成る、足し算アプリケーションです。
 
 ## 開発モードでの起動手順
