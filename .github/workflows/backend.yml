@@ -49,6 +49,10 @@ jobs:
         with:
           key: ${{ secrets.BACKEND_SERVER_SSH_KEY }}
           known_hosts: ${{ secrets.BACKEND_SERVER_KNOWN_HOSTS }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: backend/dist
 
       - run: rsync -v dist/index.js ${SERVER_USER}@${SERVER_IP}:~/index.js
         env:
